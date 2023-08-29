@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Sebastián Gallego">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Version 1</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="js.ico">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+
+    <!-- JS -->
+    <script defer src="version1.js"></script>
+
+</head>
+
+<body>
+
+    <main class="tituloContainer container-fluid d-flex mt-5 flex-column align-items-center">
+
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <img src="js.png" alt="Logo Java Script" class="logo  ">
+            <h1 class="titulo text-center m-3">Ejercicios con JavaScript</h1>
+
+        </div>
+
+        <div class="container-fluid flex-column mt-5 ">
+            <h1 class="titulo text-center ">Calculadora de Aprobación Escolar</h1>
+            <h1 class="titulo text-center ">Versión 1 (con html) </h1>
+        </div>
+    </main>
+
+    <section class="ingresoDatos mt-5 d-flex justify-content-center ">
+        <div class="container-fluid containerIngresoDatos">
+            <label for="numero">Ingresa un número entre 0 y 100:</label>
+            <input type="text" id="inputNota" maxlength="3" class="inputIngresoNota ms-3 text-center">
+            <div id="txtResultadoNota" class="alert alert-danger m-3 text-center" role="alert"></div>
+            <div id="txtMensaje" class="alert alert-secondary m-3 text-center" role="alert">"Devolución Nota"</div>
+
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="trabajosPracticos" checked>
+                <label class="form-check-label" for="">
+                    Entregó todos los trabajos Prácticos?
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="asistencia" checked>
+                <label class="form-check-label" for="">
+                    Asistió a todas las clases?
+                </label>
+            </div>
+            <div id="txtResultadoTpAsistencia" class="alert alert-danger m-3 text-center" role="alert">"Debe mejorar la
+                asistencia y la entrega de trabajos para la próxima evaluación"</div>
+        </div>
+
+    </section>
+
+    <section class="volver mt-5 d-flex justify-content-center ">
+        <button id="btnVolver" type="button" class=" btn btn-dark ">Volver a la Página Principal</button>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
