@@ -1,13 +1,10 @@
 
-    function irAversion1() {
-        window.location.href = 'version1.html';
+    function ejecutarCodigo() {
+        window.location.href = 'webCodigo.html';
         }
     
 
-    function irAversion2() {
-        window.location.href = 'version2.html';
-        }
-    
+   
 
 
 
