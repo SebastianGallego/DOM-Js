@@ -6,12 +6,23 @@ const volverBtn = document.getElementById('btnVolver');
     
 
 
+const consigna2Div = document.getElementById('consigna2');
+const titulo = document.getElementById('titulo');
+const subTitulo = document.getElementById('subTitulo');
+const btnEliminarItem = document.getElementById('btnEliminarItem');
+const consigna3Div = document.getElementById('consigna2');
+const btnCambiarImagen = document.getElementById('btnCambiarImagen');
+const imagen = document.getElementById('imagen');
 
 
 function fncInicio() {
 
-    const opcionesMenu = `\n1. Creación de elementos \n2. Eliminación de elementos \n3. Cambio de atributos \n4. Cambio de contenido HTML \n5. Anidación de elementos  \n6. Reemplazo de elementos \n7. Clonación de elementos \n8. Movimiento de elementos \n9. Cambio de estilo \n10. Edición de contenido`
+    
+    consigna2Div.style.display = 'none';
+    consigna3Div.style.display = 'none';
 
+
+    const opcionesMenu = `\n1. Creación de elementos \n2. Eliminación de elementos \n3. Cambio de atributos \n4. Cambio de contenido HTML \n5. Anidación de elementos  \n6. Reemplazo de elementos \n7. Clonación de elementos \n8. Movimiento de elementos \n9. Cambio de estilo \n10. Edición de contenido`
 
     const menu = parseInt(prompt("Ingresa una opcion:" +opcionesMenu ));
 
@@ -75,6 +86,16 @@ function fncInicio() {
 // con un texto dentro y lo agregue al final del cuerpo del documento.
 function crearElemento() {
 
+    titulo.textContent = "Crea un Elemento";
+    subTitulo.textContent = "Se agrega un Div al final del Body";
+    
+    
+    const nuevoDiv = document.createElement('div');
+
+    nuevoDiv.textContent = 'Este es un div creado con JS ';
+
+    // Agrego el nuevo div al final del body
+    document.body.appendChild(nuevoDiv);
 
 }
 
@@ -82,13 +103,45 @@ function crearElemento() {
 //Al hacer clic en el botón, elimina el primer elemento de la lista.
 function eliminarElemento() {
 
+    consigna2Div.style.display = 'block';
+    consigna3Div.style.display = 'none';
+
+    titulo.textContent = "Elimina el 1er elemento";
+    subTitulo.textContent = "de la lista con el botón";
+
+    btnEliminarItem.addEventListener('click', function() {
+        
+        // Lista de elementos
+        const lista = document.getElementById('listaElementos');
+    
+        // Verifico si la lista tiene elementos
+        if (lista.children.length > 0) {
+            lista.removeChild(lista.firstChild);
+            } else {
+            alert('La lista está vacía.');
+            }
+    });
 
 }
+
+
+
 
 
 //Opcion 3 Cambio de atributos: Crea una imagen en tu página web y utiliza JavaScript 
 //para cambiar su atributo src a una imagen diferente. 
 function cambiarAtributo() {
+    consigna3Div.style.display = 'block';
+    consigna2Div.style.display = 'none';
+
+    btnCambiarImagen.addEventListener('click', function() {
+    
+        
+        imagen.src = 'planta.jpg';
+    
+    });
+
+
 
 
 }
@@ -158,7 +211,11 @@ window.onload = fncInicio();
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    
 
+    
+});
 
 
 
