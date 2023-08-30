@@ -30,22 +30,8 @@
 
         <div class="container-fluid d-flex justify-content-center align-items-center">
             <img src="js.png" alt="Logo Java Script" class="logo  ">
-            <h1 class="titulo text-center m-3">Ejercicios con JavaScript</h1>
-
+            <h1 class="titulo text-center m-3">Ejercicios DOM y JavaScript</h1>
         </div>
-
-        <div class="container-fluid d-flex mt-5 ">
-            <h1 class="titulo text-center ">Calculadora de Aprobación Escolar</h1>
-
-        </div>
-
-
-        <button type="button" onclick=ejecutarCodigo() class="btn btn-primary mt-5" id="abrirVersion1">
-            Ejecutar Programa
-        </button>
-
-
-
     </main>
 
 
@@ -105,10 +91,43 @@
             JavaScript para permitir que el usuario edite el contenido del &lt;span&gt;
         </h2>
 
+        <div class="btnContainer text-center">
+            <button id="btnSeleccionarTarea" class="mt-2 text-center btn btn-primary  ">Seleccionar una tarea: </button>
+
+        </div>
+
     </section>
 
 
+    <div class="container-fluid flex-column mt-5 ">
+        <h1 class="titulo text-center " id="titulo">Título</h1>
+        <h1 class="titulo text-center " id="subTitulo">SubTítulo</h1>
+    </div>
 
+    <!-- Seccion Principal -->
+    <section class="seccionPrincipal mt-5 d-flex justify-content-center ">
+        <div class="container-fluid containerPrincipal" id="consigna2">
+            <h2>Lista de Elementos</h2>
+            <ul id="listaElementos">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+                <li>Elemento 5</li>
+            </ul>
+            <button id="btnEliminarItem">Eliminar Primer Elemento</button>
+        </div>
+
+        <div class="container-fluid containerPrincipal flex-column justify-content-center" id="consigna3">
+            <img src="js.png" alt="Logo JavaScript" id="imagen">
+            <button id="btnCambiarImagen" class="mt-2 text-center btn btn-primary align-items-center ">Cambiar
+                Imagen</button>
+        </div>
+
+
+
+
+    </section>
 
 
 
